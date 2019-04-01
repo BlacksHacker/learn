@@ -1,6 +1,6 @@
 package bookNotes.effectiveJava.chartOne.noteFive;
 
-//采用依赖注入的方式导入底层资源
+//采用依赖注入的方式导入底层资源，可以达到资源共享的目的
 public class SpellCheck {
     private final Lexicon dictionary;
 
