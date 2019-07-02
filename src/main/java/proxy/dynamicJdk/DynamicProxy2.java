@@ -32,6 +32,10 @@ public class DynamicProxy2 implements InvocationHandler {
         os2.reduceStock();
     }
     /*
+
+    jdk动态代理是利用反射机制生成一个实现代理接口的匿名类，在调用业务方法前调用InvocationHandler处理。
+    代理类必须实现InvocationHandler接口，并且，JDK动态代理只能代理实现了接口的类，没有实现接口的类是不能实现JDK动态代理
+
     * 1.编写被代理的类和接口。
     * 2.编写代理类实现 InvocationHandler接口，重写invoke()方法。
     * 3.使用Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)动态创建代理对象，通过代理类对象调用业务方法

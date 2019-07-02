@@ -33,5 +33,7 @@ public class DynamicProxy implements InvocationHandler {
     * 1.编写被代理的类和接口。
     * 2.编写代理类实现 InvocationHandler接口，重写invoke()方法。
     * 3.使用Proxy.newProxyInstance(ClassLoader loader, Class<?>[] interfaces, InvocationHandler h)动态创建代理对象，通过代理类对象调用业务方法
+    *
+    * JDK动态代理只能代理实现了接口的类，没有实现接口的类不能实现JDK的动态代理
     * */
 }
